@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "collections": [
+    {
+      "name": "SkillBridge / Colors",
+      "modes": [{ "modeId": "dark", "name": "Dark (Quantix)" }],
+      "variables": [
+        { "name": "Background/Canvas", "type": "COLOR", "value": "#07080B" },
+        { "name": "Background/Subtle", "type": "COLOR", "value": "#0A0B0F" },
+        { "name": "Background/Sidebar", "type": "COLOR", "value": "#090A0D" },
+        { "name": "Surface/Card", "type": "COLOR", "value": "#101217" },
+        { "name": "Surface/Elevated", "type": "COLOR", "value": "#13151B" },
+        { "name": "Surface/Hover", "type": "COLOR", "value": "#171A21" },
+        { "name": "Border/Primary", "type": "COLOR", "value": "#242832" },
+        { "name": "Border/Subtle", "type": "COLOR", "value": "#1B1E25" },
+        { "name": "Accent/Primary", "type": "COLOR", "value": "#7C5CFF" },
+        { "name": "Accent/Bright", "type": "COLOR", "value": "#8B6CFF" },
+        { "name": "Accent/Soft", "type": "COLOR", "value": "#A38BFF" },
+        { "name": "Feedback/Success", "type": "COLOR", "value": "#27D6A0" },
+        { "name": "Feedback/Warning", "type": "COLOR", "value": "#EAB04B" },
+        { "name": "Feedback/Error", "type": "COLOR", "value": "#E15C62" },
+        { "name": "Text/Primary", "type": "COLOR", "value": "#F2F3F5" },
+        { "name": "Text/Secondary", "type": "COLOR", "value": "#949BAD" },
+        { "name": "Text/Muted", "type": "COLOR", "value": "#687083" }
+      ]
+    },
+    {
+      "name": "SkillBridge / Spacing",
+      "modes": [{ "modeId": "default", "name": "Default" }],
+      "variables": [
+        { "name": "space-4", "type": "FLOAT", "value": 4 },
+        { "name": "space-8", "type": "FLOAT", "value": 8 },
+        { "name": "space-12", "type": "FLOAT", "value": 12 },
+        { "name": "space-16", "type": "FLOAT", "value": 16 },
+        { "name": "space-20", "type": "FLOAT", "value": 20 },
+        { "name": "space-24", "type": "FLOAT", "value": 24 },
+        { "name": "space-32", "type": "FLOAT", "value": 32 },
+        { "name": "space-48", "type": "FLOAT", "value": 48 }
+      ]
+    },
+    {
+      "name": "SkillBridge / Radius",
+      "modes": [{ "modeId": "default", "name": "Default" }],
+      "variables": [
+        { "name": "radius-sm", "type": "FLOAT", "value": 6 },
+        { "name": "radius-md", "type": "FLOAT", "value": 8 },
+        { "name": "radius-lg", "type": "FLOAT", "value": 12 },
+        { "name": "radius-xl", "type": "FLOAT", "value": 16 },
+        { "name": "radius-2xl", "type": "FLOAT", "value": 20 },
+        { "name": "radius-full", "type": "FLOAT", "value": 9999 }
+      ]
+    }
+  ]
+}

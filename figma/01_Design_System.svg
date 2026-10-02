@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440" height="1500" viewBox="0 0 1440 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    <!-- Ambient Glow Gradients -->
+    <radialGradient id="purpleGlowTop" cx="60%" cy="0%" r="65%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#07080B" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="sidebarGlow" cx="20%" cy="0%" r="65%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#090A0D" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="cardHeroGlow" cx="90%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#101217" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="geminiAIGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B6CFF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Linear Accent Gradients -->
+    <linearGradient id="primaryPurpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B6CFF" />
+      <stop offset="100%" stop-color="#7C5CFF" />
+    </linearGradient>
+    <linearGradient id="readinessGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C5CFF" />
+      <stop offset="100%" stop-color="#27D6A0" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#27D6A0" />
+      <stop offset="100%" stop-color="#35D39A" />
+    </linearGradient>
+    <linearGradient id="activeNavPill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B6CFF" />
+      <stop offset="100%" stop-color="#7C5CFF" />
+    </linearGradient>
+
+    <!-- Filters / Shadows -->
+    <filter id="dropShadowCard" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="15" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <filter id="purpleGlowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1440" height="1500" fill="#07080B" />
+  <rect width="1440" height="400" fill="url(#purpleGlowTop)" />
+
+  <!-- Artboard Header -->
+  <g id="DS_Header" transform="translate(64, 48)">
+    <rect width="90" height="24" rx="12" fill="#7C5CFF" fill-opacity="0.15" stroke="#7C5CFF" stroke-opacity="0.3" stroke-width="1" />
+    <text x="45" y="16" fill="#8B6CFF" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="700" text-anchor="middle">FIGMA 2.0</text>
+    <text x="0" y="58" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="32" font-weight="800">SkillBridge Design System</text>
+    <text x="0" y="84" fill="#949BAD" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="14">Quantix-Inspired Dark SaaS Architecture • Token Specifications &amp; Reusable Components</text>
+  </g>
+
+  <!-- SECTION 1: COLOR PALETTE -->
+  <g id="Colors_Section" transform="translate(64, 180)">
+    <text fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="18" font-weight="700">01. Color Palette &amp; Variables</text>
+    <text y="24" fill="#687083" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12">Semantic dark surface tokens with subdued purple lighting</text>
+
+    <!-- Row 1: Backgrounds & Surfaces -->
+    <g transform="translate(0, 48)">
+      <!-- Canvas -->
+      <g transform="translate(0, 0)">
+        <rect width="120" height="70" rx="8" fill="#07080B" stroke="#242832" stroke-width="1" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Canvas</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#07080B</text>
+      </g>
+      <!-- Surface Card -->
+      <g transform="translate(136, 0)">
+        <rect width="120" height="70" rx="8" fill="#101217" stroke="#242832" stroke-width="1" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Surface Card</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#101217</text>
+      </g>
+      <!-- Elevated Surface -->
+      <g transform="translate(272, 0)">
+        <rect width="120" height="70" rx="8" fill="#13151B" stroke="#242832" stroke-width="1" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Elevated</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#13151B</text>
+      </g>
+      <!-- Hover -->
+      <g transform="translate(408, 0)">
+        <rect width="120" height="70" rx="8" fill="#171A21" stroke="#242832" stroke-width="1" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Hover State</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#171A21</text>
+      </g>
+      <!-- Border Primary -->
+      <g transform="translate(544, 0)">
+        <rect width="120" height="70" rx="8" fill="#242832" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Border Primary</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#242832</text>
+      </g>
+      <!-- Border Subtle -->
+      <g transform="translate(680, 0)">
+        <rect width="120" height="70" rx="8" fill="#1B1E25" stroke="#242832" stroke-width="1" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Border Subtle</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#1B1E25</text>
+      </g>
+    </g>
+
+    <!-- Row 2: Accents & Feedback -->
+    <g transform="translate(0, 180)">
+      <!-- Accent Primary -->
+      <g transform="translate(0, 0)">
+        <rect width="120" height="70" rx="8" fill="#7C5CFF" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Accent Primary</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#7C5CFF</text>
+      </g>
+      <!-- Accent Bright -->
+      <g transform="translate(136, 0)">
+        <rect width="120" height="70" rx="8" fill="#8B6CFF" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Accent Bright</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#8B6CFF</text>
+      </g>
+      <!-- Accent Soft -->
+      <g transform="translate(272, 0)">
+        <rect width="120" height="70" rx="8" fill="#A38BFF" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Accent Soft</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#A38BFF</text>
+      </g>
+      <!-- Success -->
+      <g transform="translate(408, 0)">
+        <rect width="120" height="70" rx="8" fill="#27D6A0" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Success</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#27D6A0</text>
+      </g>
+      <!-- Warning -->
+      <g transform="translate(544, 0)">
+        <rect width="120" height="70" rx="8" fill="#EAB04B" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Warning</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#EAB04B</text>
+      </g>
+      <!-- Error -->
+      <g transform="translate(680, 0)">
+        <rect width="120" height="70" rx="8" fill="#E15C62" />
+        <text x="12" y="90" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600">Error</text>
+        <text x="12" y="104" fill="#687083" font-family="monospace" font-size="10">#E15C62</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SECTION 2: TYPOGRAPHY HIERARCHY -->
+  <g id="Typography_Section" transform="translate(64, 520)">
+    <text fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="18" font-weight="700">02. Typography Styles</text>
+    <text y="24" fill="#687083" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12">Hierarchy based on Plus Jakarta Sans &amp; Inter</text>
+
+    <g transform="translate(0, 48)">
+      <text fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="32" font-weight="800">Display 32px / Extrabold (Good morning, Aarav 👋)</text>
+      <text y="44" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="24" font-weight="700">Heading 24px / Bold (Your Skill Gap Diagnostics)</text>
+      <text y="82" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="18" font-weight="700">Title 18px / Bold (Stage 02: SQL &amp; Relational Databases)</text>
+      <text y="116" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="14" font-weight="500">Body 14px / Medium (A personalized path based on your current skills and 4-6 hrs weekly budget.)</text>
+      <text y="146" fill="#949BAD" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12">Caption 12px / Regular (You are outperforming 78% of peers aiming for junior data analytics roles.)</text>
+      <text y="174" fill="#8B6CFF" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="10" font-weight="700" letter-spacing="0.08em">MICRO 10px / UPPERCASE (STAGE 02 IN PROGRESS • 3 PROJECTS REMAINING)</text>
+    </g>
+  </g>
+
+  <!-- SECTION 3: BUTTONS & INTERACTIVE CONTROLS -->
+  <g id="Components_Section" transform="translate(64, 780)">
+    <text fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="18" font-weight="700">03. UI Components &amp; Variants</text>
+    <text y="24" fill="#687083" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12">Buttons, Badges, Chips, Form Inputs, and Progress Bars</text>
+
+    <!-- Buttons -->
+    <g transform="translate(0, 56)">
+      <text fill="#687083" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12" font-weight="600">BUTTON VARIANTS</text>
+      
+      <!-- Primary -->
+      <g transform="translate(0, 20)">
+        <rect width="140" height="38" rx="8" fill="#7C5CFF" />
+        <text x="70" y="24" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Continue Learning →</text>
+      </g>
+      <!-- Primary Hover -->
+      <g transform="translate(156, 20)">
+        <rect width="140" height="38" rx="8" fill="#8B6CFF" />
+        <text x="70" y="24" fill="#FFFFFF" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Primary Hover</text>
+      </g>
+      <!-- Secondary -->
+      <g transform="translate(312, 20)">
+        <rect width="130" height="38" rx="8" fill="#171A21" stroke="#242832" stroke-width="1" />
+        <text x="65" y="24" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Secondary</text>
+      </g>
+      <!-- Outline -->
+      <g transform="translate(458, 20)">
+        <rect width="130" height="38" rx="8" fill="transparent" stroke="#242832" stroke-width="1" />
+        <text x="65" y="24" fill="#949BAD" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Outline</text>
+      </g>
+    </g>
+
+    <!-- Badges -->
+    <g transform="translate(0, 150)">
+      <text fill="#687083" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12" font-weight="600">BADGES &amp; PILLS</text>
+      
+      <!-- Accent Badge -->
+      <g transform="translate(0, 20)">
+        <rect width="90" height="24" rx="12" fill="#7C5CFF" fill-opacity="0.15" stroke="#7C5CFF" stroke-opacity="0.3" stroke-width="1" />
+        <text x="45" y="16" fill="#8B6CFF" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Target Career</text>
+      </g>
+      <!-- Success Badge -->
+      <g transform="translate(106, 20)">
+        <rect width="130" height="24" rx="12" fill="#27D6A0" fill-opacity="0.12" stroke="#27D6A0" stroke-opacity="0.25" stroke-width="1" />
+        <circle cx="16" cy="12" r="3" fill="#27D6A0" />
+        <text x="72" y="16" fill="#27D6A0" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Gemini Connected</text>
+      </g>
+      <!-- Warning Badge -->
+      <g transform="translate(252, 20)">
+        <rect width="96" height="24" rx="12" fill="#EAB04B" fill-opacity="0.12" stroke="#EAB04B" stroke-opacity="0.25" stroke-width="1" />
+        <text x="48" y="16" fill="#EAB04B" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="700" text-anchor="middle">8-Day Streak</text>
+      </g>
+      <!-- Neutral Badge -->
+      <g transform="translate(364, 20)">
+        <rect width="80" height="24" rx="12" fill="#171A21" stroke="#242832" stroke-width="1" />
+        <text x="40" y="16" fill="#949BAD" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Upcoming</text>
+      </g>
+    </g>
+
+    <!-- Progress Bars -->
+    <g transform="translate(0, 240)">
+      <text fill="#687083" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12" font-weight="600">PROGRESS BARS</text>
+      
+      <!-- Gradient Readiness Bar (48%) -->
+      <g transform="translate(0, 20)">
+        <text fill="#949BAD" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12">Overall Career Readiness (48%)</text>
+        <rect y="12" width="400" height="8" rx="4" fill="#0A0B0F" stroke="#1B1E25" stroke-width="1" />
+        <rect y="12" width="192" height="8" rx="4" fill="url(#readinessGrad)" />
+      </g>
+      <!-- Success Project Bar (100%) -->
+      <g transform="translate(440, 20)">
+        <text fill="#949BAD" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12">Deliverable Completed (100%)</text>
+        <rect y="12" width="300" height="8" rx="4" fill="#0A0B0F" stroke="#1B1E25" stroke-width="1" />
+        <rect y="12" width="300" height="8" rx="4" fill="#27D6A0" />
+      </g>
+    </g>
+
+    <!-- Cards & Elevation -->
+    <g transform="translate(0, 340)">
+      <text fill="#687083" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12" font-weight="600">CONTAINER CARDS</text>
+      
+      <!-- Card Standard -->
+      <g transform="translate(0, 20)">
+        <rect width="360" height="150" rx="16" fill="#101217" stroke="#242832" stroke-width="1" />
+        <text x="24" y="36" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="14" font-weight="700">Standard Card (#101217)</text>
+        <text x="24" y="60" fill="#949BAD" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12">1px stroke #242832, 16px corner radius</text>
+        <rect x="24" y="90" width="80" height="28" rx="6" fill="#171A21" stroke="#242832" stroke-width="1" />
+        <text x="64" y="108" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" text-anchor="middle">Action</text>
+      </g>
+
+      <!-- Card with Glow -->
+      <g transform="translate(390, 20)">
+        <rect width="380" height="150" rx="16" fill="#101217" stroke="#7C5CFF" stroke-opacity="0.35" stroke-width="1" />
+        <circle cx="340" cy="40" r="60" fill="url(#geminiAIGlow)" />
+        <text x="24" y="36" fill="#F2F3F5" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="14" font-weight="700">Glow Highlight Card</text>
+        <text x="24" y="60" fill="#949BAD" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="12">Radial violet illumination, purple accent border</text>
+        <rect x="24" y="90" width="120" height="28" rx="6" fill="#7C5CFF" />
+        <text x="84" y="108" fill="#FFFFFF" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Resume Stage</text>
+      </g>
+    </g>
+  </g>
+</svg>
